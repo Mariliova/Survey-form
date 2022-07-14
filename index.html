@@ -19,62 +19,79 @@
         <p class="sub-title">Thank you for taking the time to take the survey</p>
     </header>
 
-    <form action="https://tests.fomenko.top/echo/index.php" method="post" id="form">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" class="display" id="name" placeholder="Enter your name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" class="display" id="email" placeholder="Enter your Email" required>
-        </div>
-        <div class="form-group">
-            <label for="tel">Phone number</label>
-            <input type="tel" name="tel" class="display" id="tel" placeholder="Enter your phone number" required>
-        </div>
-        <div class="form-group">
-            <label for="age">Age</label>
-            <input type="number" name="age" class="display" id="age" placeholder="Age" min="12" max="200" required>
-        </div>
-        <div class="form-group">
-            <label for="dropdown">Choose the type of your profile:</label>
-            <select name="dropdown" class="display select" id="dropdown">
-                <option value="">Choose one option</option>
-                <option value="1">Student</option>
-                <option value="2">Teacher</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <p>Would you recommend our company to a friend?</p>
-            <div>
-                <input type="radio" name="recommend" id="D" value="D"  checked>
-                <label for="D">Definitely</label>
-            </div>
-            <div>
-                <input type="radio" name="recommend" id="MB" value="MB">
-                <label for="MB">May be</label>
-            </div>
-            <div>
-                <input type="radio" name="recommend" id="NS" value="NS">
-                <label for="NS">Not sure</label>
-            </div>
-            <p>Would you like to know more ?</p>
-            <div>
-                <input type="checkbox" name="check-if1" id="check-if1" value="by_email" checked>
-                <label for="check-if1">I want to recieve updates by email</label>
-            </div>
-            <div>
-                <input type="checkbox" name="check-if2" id="check-if2" value="on_Telegram">
-                <label for="check-if2">I want to recieve updates on Telegram</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <lable for="textarea">Additional comments</lable>
-            <textarea name="textarea" class="display text" id="textarea" rows="3" cols="30"
-                placeholder="By the end of the course I would like to..."></textarea>
-        </div>
-        <div class="form-group submit-button"><button class="button">Submit</button></div>
-    </form>
+    <main>
+        <form action="https://tests.fomenko.top/echo/index.php" method="post" id="form">
+            <fieldset>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="display" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="display" id="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Phone number</label>
+                    <input type="tel" name="tel" class="display" id="tel" placeholder="Enter your phone number"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" class="display" id="age" placeholder="Age" min="12" max="200"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Choose the type of your profile:</label>
+                    <select name="dropdown" class="display select" id="dropdown">
+                        <option value="">Choose one option</option>
+                        <option value="1">Student</option>
+                        <option value="2">Teacher</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="ml">Would you recommend our company to a friend?</legend>
+                <div class="ml">
+                    <input type="radio" name="recommend" id="D" value="D" checked>
+                    <label for="D">Definitely</label>
+                </div>
+                <div class="ml">
+                    <input type="radio" name="recommend" id="MB" value="MB">
+                    <label for="MB">May be</label>
+                </div>
+                <div class="ml">
+                    <input type="radio" name="recommend" id="NS" value="NS">
+                    <label for="NS">Not sure</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend class="ml">Would you like to know more ?</legend>
+                <div class="ml">
+                    <input type="checkbox" name="check-if1" id="check-if1" value="by_email" checked>
+                    <label for="check-if1">I want to recieve updates by email</label>
+                </div>
+                <div class="ml">
+                    <input type="checkbox" name="check-if2" id="check-if2" value="on_Telegram">
+                    <label for="check-if2">I want to recieve updates on Telegram</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="form-group">
+                    <lable for="textarea">Additional comments</lable>
+                    <textarea name="textarea" class="display text" id="textarea" rows="3" cols="30"
+                        placeholder="By the end of the course I would like to..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="form-group submit-button"><button class="button">Submit</button></div>
+            </fieldset>
+
+        </form>
+    </main>
 
 </body>
 
